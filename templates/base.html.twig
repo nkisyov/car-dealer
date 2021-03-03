@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- meta charec set -->
+        <meta charset="utf-8">
+        <!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Page Title -->
+        <title>Спасов Ауто - продажба на автомобили и пътна помощ</title>       
+        <!-- Meta Description -->
+        <meta name="description" content="Продажба на употребявани автомобили, репатриране">
+        <meta name="keywords" content="автомобили, автокъща, автосервиз, репатрак, репатриране">
+        <meta name="author" content="">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Google Font -->
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- CSS
+        ================================================== -->
+        <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.css') }}">
+        <!-- animate -->
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <!-- media-queries -->
+        <link rel="stylesheet" href="{{ asset('css/media-queries.css') }}">
+
+        <!-- Modernizer Script for old Browsers -->
+        <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+
+    </head>
+    
+    <body id="body">
+    
+        <!-- preloader -->
+        <div id="preloader">
+            <img src="{{ asset('img/preloader.gif') }}" alt="Preloader">
+        </div>
+        <!-- end preloader -->
+
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#body">
+                        <h1 id="logo">
+                            <img src="{{ asset('img/logo.png') }}" alt="Спасов Ауто">
+                        </h1>
+                    </a>
+                    <!-- /logo -->
+                </div>
+
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="tel:+359884300026">088 430 0026</a></li>
+                        <li><a href="#body">Начало</a></li>
+                        <li><a href="#features">Услуги</a></li>
+                        <li><a href="#cars">Автомобили</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </nav>
+                <!-- /main nav -->
+                
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+        
+        
+        
+        <!--
+        Home Slider
+        ==================================== -->
+        
+        <section id="slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            
+                <!-- Indicators bullet -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+                <!-- End Indicators bullet -->              
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    
+                    <!-- single slide -->
+                    <div class="item active" style="background-image: url({{ asset('img/banner1.jpg') }});">
+                        <div class="carousel-caption">
+                            <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Продажба на автомобили</span></h2>
+                            <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Богат избор и добри условия.</span></h3>
+                            <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">088 430 0026</span></h3>
+                            
+                            <ul class="social-links text-center">
+                                <li><a href="https://www.facebook.com/%D0%A1%D0%BF%D0%B0%D1%81%D0%BE%D0%B2-%D0%90%D1%83%D1%82%D0%BE-2016-1851396505124830/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                                <li><a href="https://goo.gl/maps/EtmmK6eXQsy" target="_blank"><i class="fas fa-map-marked fa-3x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end single slide -->
+                    
+                    <!-- single slide -->
+                    <div class="item" style="background-image: url({{ asset('img/banner2.jpg') }});">
+                        <div class="carousel-caption">
+                            <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Пътна помощ</span>!</h2>
+                            <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">Денонощна пътна помощ</span></h3>
+                            <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">088 430 0026</span></h3>
+
+                            <ul class="social-links text-center">
+                                <li><a href="https://www.facebook.com/%D0%A1%D0%BF%D0%B0%D1%81%D0%BE%D0%B2-%D0%90%D1%83%D1%82%D0%BE-2016-1851396505124830/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                                <li><a href="https://goo.gl/maps/EtmmK6eXQsy" target="_blank"><i class="fas fa-map-marked fa-3x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end single slide -->
+                    
+                </div>
+                <!-- End Wrapper for slides -->
+                
+            </div>
+        </section>
+        
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+        
+        <!--
+        Features
+        ==================================== -->
+        
+        <section id="features" class="features">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                        <h2>Услуги</h2>
+                        <div class="devider"><i class="far fa-star"></i></div>
+                    </div>
+
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-car fa-3x"></i>
+                            </div>
+                            
+                            <div class="service-desc">
+                                <h3>Автомобили</h3>
+                                <p>Внос и продажба на автомобили внос от Европа и Швейцаря. Богат избор и достъпни цени. Транспорт до всяка точка на страната.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                    
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-shuttle-van fa-3x"></i>
+                            </div>
+                            
+                            <div class="service-desc">
+                                <h3>Пътна помощ</h3>
+                                <p>Денонощна пътна помощ и репатриране на леки коли, джипове и бусове. Преференциални цени!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                    
+                    <!-- service item -->
+                    <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-wrench fa-3x"></i>
+                            </div>
+                            
+                            <div class="service-desc">
+                                <h3>Автосервиз</h3>
+                                <p>Широка гама от услуги - цялостен ремонт на леки автомобили и джипове, сервиз на гуми и джанти, подмяна на части.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end service item -->
+                        
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        End Features
+        ==================================== -->
+        
+        
+        <!--
+        Our Works
+        ==================================== -->
+        
+        <section id="cars" class="works clearfix">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="sec-title text-center">
+                        <h2>Автомобили</h2>
+                        <div class="devider"><i class="far fa-star"></i></div>
+                    </div>
+                    
+                    <div class="sec-sub-title text-center">
+                        <p>Спасов Ауто Ви предлага широка гама от употребявани автомобили внос от Европа и Швейцария.</p>
+                        <p>Разгледайте предложенията и на <a href="https://spasovauto2016.mobile.bg/" target="_blank">spasovauto2016.mobile.bg</a></p>
+
+                    </div>
+                    
+                    <!-- <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+                        <ul class="text-center">
+                            <li><a href="javascript:;" data-filter="all" class="active filter">Всички</a></li>
+                            <li><a href="javascript:;" data-filter=".cars" class="filter">Автомобили</a></li>
+                            <li><a href="javascript:;" data-filter=".jeeps" class="filter">Джипове</a></li>
+                        </ul>
+                    </div> -->
+                    
+                </div>
+            </div>
+            
+            <div class="project-wrapper">
+
+                {% for car in cars %}
+                    <figure class="mix work-item cars">
+                        <img src="{{ car.getImage()}}" alt="Спасов Ауто обява">                    
+                        <figcaption class="overlay">
+                            <h4>
+                                <a href="{{ car.getLink()}}" target="_blank">
+                                    Виж обявата
+                                    <br/>
+                                    в mobile.bg
+                                </a>
+                            </h4>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </div>
+        </section>
+        
+        <!--
+        End Our Works
+        ==================================== -->
+        
+        
+        <!--
+        Contact Us
+        ==================================== -->        
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row mb50">
+                
+                    <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+                        <h2>Контакти</h2>
+                        <div class="devider"><i class="far fa-star"></i></div>
+                    </div>
+                    
+                    <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+                        <p><b>Телефон:</b> 088 430 0026</p>
+                        <p><b>Адрес:</b> Своге, ул. Черно море</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Google map -->
+            <a href="https://goo.gl/maps/EtmmK6eXQsy" target="_blank" id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></a>
+            <!-- End Google map -->
+            
+        </section>
+        
+        <!--
+        End Contact Us
+        ==================================== -->
+        
+        
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright text-center">
+                            © {{ "now"|date('Y') }} Спасов Ауто :: <a href="http://better-ltd.com" target="_blank">Уеб дизайн от Better</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+        <!-- Essential jQuery Plugins
+        ================================================== -->
+        <!-- Main jQuery -->
+        <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+        <!-- Single Page Nav -->
+        <script src="{{ asset('js/jquery.singlePageNav.min.js') }}"></script>
+        <!-- Twitter Bootstrap -->
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <!-- jquery.fancybox.pack -->
+        <script src="{{ asset('js/jquery.fancybox.pack.js') }}"></script>
+        <!-- jquery.mixitup.min -->
+        <script src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
+        <!-- jquery.parallax -->
+        <script src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
+        <!-- jquery.countTo -->
+        <script src="{{ asset('js/jquery-countTo.js') }}"></script>
+        <!-- jquery.appear -->
+        <script src="{{ asset('js/jquery.appear.js') }}"></script>
+        <!-- Contact form validation -->
+        <script src="{{ asset('js/jquery.form.js') }}"></script>
+        <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+        <!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <!-- jquery easing -->
+        <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+        <!-- jquery easing -->
+        <script src="{{ asset('js/wow.min.js') }}"></script>
+        <script>
+            var wow = new WOW ({
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       120,          // distance to the element when triggering the animation (default is 0)
+                mobile:       false,       // trigger animations on mobile devices (default is true)
+                live:         true        // act on asynchronously loaded content (default is true)
+              }
+            );
+            wow.init();
+        </script> 
+        <!-- Custom Functions -->
+        <script src="{{ asset('js/custom.js') }}"></script>
+        
+        <script type="text/javascript">
+            $(function(){
+                /* ========================================================================= */
+                /*  Contact Form
+                /* ========================================================================= */
+                
+                $('#contact-form').validate({
+                    rules: {
+                        name: {
+                            required: true,
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        message: {
+                            required: true
+                        }
+                    },
+                    messages: {
+                        name: {
+                            required: "Въведете име"
+                        },
+                        email: {
+                            required: "Въведете име електронна поща"
+                        },
+                        message: {
+                            required: "Въведете съобщение"
+                        }
+                    },
+                    submitHandler: function(form) {
+                        $(form).ajaxSubmit({
+                            type:"POST",
+                            data: $(form).serialize(),
+                            url:"/sendmail",
+                            success: function() {
+                                $('#contact-form :input').attr('disabled', 'disabled');
+                                $('#contact-form').fadeTo( "slow", 0.15, function() {
+                                    $(this).find(':input').attr('disabled', 'disabled');
+                                    $(this).find('label').css('cursor','default');
+                                    $('#success').fadeIn();
+                                });
+                            },
+                            error: function() {
+                                $('#contact-form').fadeTo( "slow", 0.15, function() {
+                                    $('#error').fadeIn();
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173037875-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-173037875-1');
+        </script>
+
+    </body>
+</html>
